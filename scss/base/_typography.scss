@@ -1,0 +1,17 @@
+@use '../utils' as *;
+
+body {
+  font-family: $font-primary;
+  font-weight: $regular;
+  line-height: 1;
+}
+
+.heading-primary {
+  font-size: rem(20);
+  font-size: clamp(rem(20), rem(18.4) + 0.4319654427645789vw, rem(24));
+  line-height: rem(30);
+  line-height: clamp(rem(30), rem(27.6) + 0.6479481641468683vw, rem(36));
+
+  color: $primary;
+  font-weight: $semi-bold;
+}

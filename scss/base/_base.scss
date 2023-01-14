@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 rem(3) $soft-orange;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  @include breakpoint-mobile(medium) {
+    background-color: $primary;
+  }
+}
+
+.container {
+  max-width: rem(1296);
+
+  @include breakpoint-mobile(medium) {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: 1.5fr 2fr;
+    border-radius: rem(8);
+    overflow: hidden;
+    margin: rem(50) auto;
+  }
+}

@@ -1,0 +1,18 @@
+@use 'functions' as *;
+// COLORS
+$primary: hsl(134, 26%, 28%);
+$primary-light: hsl(134, 14%, 40%);
+$lime-green: hsl(160, 97%, 30%);
+$grayish-lime-green: hsl(134, 26%, 78%);
+$dark-blue: hsl(210, 24%, 24%);
+$grayish-violet: hsl(264, 21%, 25%);
+$soft-orange: hsl(28, 72%, 86%);
+$white: hsl(0, 0%, 100%);
+
+// FONTS
+$font-primary: 'Inter', sans-serif;
+
+// FONT WEIGHTS
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;

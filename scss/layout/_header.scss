@@ -1,0 +1,25 @@
+@use '../utils' as *;
+.header {
+  background-color: $primary;
+  padding: rem(32);
+  @include flex-center;
+
+  &__logo-box {
+    @include flex-center;
+    gap: rem(16);
+  }
+
+  &__logo-text {
+    color: $white;
+    font-size: rem(32);
+    font-weight: $semi-bold;
+
+    @include breakpoint-mobile(medium) {
+      color: $primary;
+    }
+  }
+
+  @include breakpoint-mobile(medium) {
+    background-color: $white;
+  }
+}

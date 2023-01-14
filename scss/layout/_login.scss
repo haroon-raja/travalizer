@@ -1,0 +1,21 @@
+@use '../utils/' as *;
+.section-login {
+  padding: rem(50) rem(24);
+  background-color: $white;
+  @include flex-column;
+  gap: rem(50);
+
+  @include breakpoint-mobile(medium) {
+    padding-inline: rem(60);
+  }
+
+  &__text-box {
+    @include flex-column;
+    gap: rem(16);
+  }
+
+  &__text {
+    font-size: rem(16);
+    color: $primary-light;
+  }
+}

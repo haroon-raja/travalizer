@@ -1,0 +1,118 @@
+@use '../utils' as *;
+.form {
+  @include flex-column;
+  gap: rem(24);
+
+  &__group {
+    &-input {
+      @include flex-column;
+      gap: rem(8);
+      position: relative;
+    }
+
+    &-checkbox {
+      @include flex-center;
+    }
+
+    &-btn {
+      @include flex-v-center;
+      justify-content: space-between;
+    }
+  }
+
+  &__label {
+    font-size: rem(16);
+    font-weight: $semi-bold;
+    line-height: rem(16);
+
+    &--phone {
+      color: $dark-blue;
+    }
+
+    &--password {
+      color: $primary;
+    }
+  }
+
+  &__input {
+    padding: rem(16);
+    border: 1px solid $grayish-lime-green;
+    border-radius: rem(8);
+    font-family: inherit;
+    line-height: rem(24);
+    font-size: rem(20);
+
+    &--phone {
+      color: $grayish-violet;
+      &::-webkit-input-placeholder {
+        color: $grayish-violet;
+      }
+    }
+
+    &--password {
+      color: $primary;
+      &::-webkit-input-placeholder {
+        color: $primary;
+      }
+
+      &-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: rem(16);
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__checkbox {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+    &-label {
+      color: $primary;
+      cursor: pointer;
+      @include flex-center;
+      gap: rem(10);
+    }
+  }
+
+  &__checkbox-button {
+    width: rem(15);
+    height: rem(15);
+    border: 1.5px solid $lime-green;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+
+    &-icon {
+      width: rem(12);
+      height: rem(12);
+      fill: $white;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+  }
+
+  &__checkbox:checked ~ &__checkbox-label &__checkbox-button {
+    background-color: $lime-green;
+  }
+
+  &__checkbox:checked ~ &__checkbox-label &__checkbox-button-icon {
+    opacity: 1;
+  }
+
+  &__forgot-pass {
+    margin-left: auto;
+
+    &:link,
+    &:visited {
+      border-bottom: 1px solid currentColor;
+      color: $primary;
+      padding-bottom: 1px;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Travalizer Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./" class="header__logo-box">
+          <picture>
+            <source media="(min-width: 50em)" srcset="images/logo.svg 48w" />
+            <source srcset="images/logo-white.svg 48w" />
+            <img
+              class="header__logo"
+              width="48"
+              height="48"
+              src="images/logo-white.svg"
+              alt="Travalizer Logo"
+            />
+          </picture>
+          <span class="header__logo-text">Travalizer</span>
+        </a>
+      </header>
+      <section class="section-hero">
+        <picture>
+          <source
+            media="(min-width: 50em)"
+            srcset="images/illustration-desktop.svg"
+          />
+          <source srcset="images/illustration-mobile.svg" />
+          <img class="hero__img" src="images/illustration-mobile.svg" alt="" />
+        </picture>
+      </section>
+      <main class="section-login">
+        <div class="section-login__text-box">
+          <h1 class="heading-primary">
+            Artificial Intelligence giving you travel recommendations
+          </h1>
+          <p class="section-login__text">
+            Welcome Back, Please login to your account
+          </p>
+        </div>
+        <form action="#" class="form">
+          <div class="form__group-input">
+            <label for="phone" class="form__label form__label--phone"
+              >Phone</label
+            >
+            <input
+              type="number"
+              class="form__input form__input--phone"
+              id="phone"
+              placeholder="Phone number"
+              required
+            />
+          </div>
+
+          <div class="form__group-input">
+            <label for="password" class="form__label form__label--password">
+              Password
+            </label>
+            <input
+              type="password"
+              class="form__input form__input--password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <img
+              src="images/icon-eye-hide.svg"
+              alt="Show Password"
+              width="24"
+              height="24"
+              class="form__input--password-icon"
+              role="button"
+            />
+          </div>
+
+          <div class="form__group-checkbox">
+            <input
+              aria-hidden="true"
+              type="checkbox"
+              class="form__checkbox"
+              id="remember-me"
+            />
+            <label for="remember-me" class="form__checkbox-label">
+              <span aria-label="checkbox" class="form__checkbox-button">
+                <svg class="form__checkbox-button-icon">
+                  <use xlink:href="images/sprite.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              Remember me
+            </label>
+            <a href="#" class="form__forgot-pass">Forgot password?</a>
+          </div>
+
+          <div class="form__group-btn">
+            <button type="submit" class="button">Login</button>
+            <a href="#" class="btn-link">Sign Up</a>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

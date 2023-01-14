@@ -1,0 +1,25 @@
+@use '../utils/' as *;
+.button,
+.btn-link {
+  font-weight: $semi-bold;
+  padding: rem(16) rem(50);
+  border-radius: rem(8);
+  font-size: rem(16);
+  &:focus {
+    box-shadow: 0 0 0 rem(3) $soft-orange;
+  }
+}
+.button {
+  border: 1px solid currentColor;
+  background-color: $lime-green;
+  color: $white;
+  cursor: pointer;
+}
+
+.btn-link {
+  &:link,
+  &:visited {
+    color: $lime-green;
+    border: 1px solid $lime-green;
+  }
+}

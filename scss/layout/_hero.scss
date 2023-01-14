@@ -1,0 +1,14 @@
+@use '../utils' as *;
+.section-hero {
+  background-color: $soft-orange;
+  padding: rem(35) 0;
+  @include flex-center;
+  overflow: hidden;
+
+  grid-row: 1 / -1;
+  grid-column: 2 / 3;
+}
+
+.hero__img {
+  max-width: rem(500);
+}
