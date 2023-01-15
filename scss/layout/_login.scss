@@ -5,6 +5,10 @@
   @include flex-column;
   gap: rem(50);
 
+  @include breakpoint-desktop(small) {
+    padding-inline: rem(15);
+  }
+
   @include breakpoint-mobile(medium) {
     padding-inline: rem(60);
   }

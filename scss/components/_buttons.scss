@@ -8,6 +8,10 @@
   &:focus {
     box-shadow: 0 0 0 rem(3) $soft-orange;
   }
+
+  @include breakpoint-desktop(small) {
+    padding-inline: rem(40);
+  }
 }
 .button {
   border: 1px solid currentColor;

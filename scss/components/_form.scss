@@ -17,6 +17,9 @@
     &-btn {
       @include flex-v-center;
       justify-content: space-between;
+      @include breakpoint-desktop(small) {
+        gap: rem(5);
+      }
     }
   }
 
