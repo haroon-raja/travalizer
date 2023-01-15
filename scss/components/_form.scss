@@ -48,6 +48,15 @@
       &::-webkit-input-placeholder {
         color: $grayish-violet;
       }
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        appearance: none;
+      }
+    }
+
+    &[type='number'] {
+      appearance: textfield;
     }
 
     &--password {
