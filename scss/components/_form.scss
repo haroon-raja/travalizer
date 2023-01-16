@@ -79,9 +79,10 @@
   }
 
   &__checkbox {
-    width: 0;
-    height: 0;
-    visibility: hidden;
+    width: rem(15);
+    height: rem(15);
+    accent-color: $primary;
+    cursor: pointer;
 
     &-label {
       color: $primary;
@@ -89,33 +90,6 @@
       @include flex-center;
       gap: rem(10);
     }
-  }
-
-  &__checkbox-button {
-    width: rem(15);
-    height: rem(15);
-    border: 1.5px solid $lime-green;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s;
-
-    &-icon {
-      width: rem(12);
-      height: rem(12);
-      fill: $white;
-      opacity: 0;
-      transition: all 0.3s;
-    }
-  }
-
-  &__checkbox:checked ~ &__checkbox-label &__checkbox-button {
-    background-color: $lime-green;
-  }
-
-  &__checkbox:checked ~ &__checkbox-label &__checkbox-button-icon {
-    opacity: 1;
   }
 
   &__forgot-pass {
